@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+<!-- css stylesheet link -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- my file is less than 2MB so i added a song in the compresed file  -->
+
+    
+</head>
+<body>
+    
+    <main class="app">
+      
+      <section class="greeting">
+          <h2 class="title">
+
+            <!-- the user can enter there name  -->
+            what's up, <input type="text" id="name" placeholder="Name here">
+          </h2>
+      </section>
+
+      <!-- we created a todo list tab -->
+      <section class="create-todo">
+
+        <h3>CREATE A TODO LIST</h3>
+
+        <form id="new-todo-form">
+            <h4>what's on your todo List?</h4>
+
+            <input type="text" name="content" id="content" placeholder="e. g. write a todo list">
+            
+
+            <!-- we given to categorys for "Business" & "Personal"  user can choose one  -->
+
+            <h4>pick a category</h4>
+            <div class="options">
+
+                <label>
+                   <input
+                    type="radio" 
+                    name="category"
+                   id="category1" 
+                   value="business">
+                 <span class="bubble business"></span>
+                <div>Business</div>
+                </label>
+
+                <!-- we given labels so the user can understand Personal or Business -->
+                <label>
+                    <input 
+                    type="radio" 
+                    name="category"
+                    id="category2" 
+                    value="personal">
+                  <span class="bubble personal"></span>
+                 <div>Personal</div>
+                 </label>
+
+
+            </div>
+
+            <!-- we give a value "todo" to submit button -->
+            <input type="submit" value="Add Todo">
+        </form>
+      </section>
+
+      <!-- the list of items are arranged here -->
+
+      <section class="todo-list">
+          <h3>TODO LIST</h3>
+         <div class="list" id="todo-list">
+
+            <!-- <div class="todo-item done">
+                <label>
+                    <input type="checkbox">
+                    <span class="bubble business"></span>
+                </label>
+
+                <div class="todo-content">
+                    <input type="text" value="make a video" readonly>
+                </div>
+
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div>
+
+            <div class="todo-item">
+                <label>
+                    <input type="checkbox">
+                    <span class="bubble personal"></span>
+                </label>
+
+                <div class="todo-content">
+                    <input type="text" value="Get some milk" readonly>
+                </div>
+
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </div>
+            </div> -->
+
+         </div>
+      </section>
+    </main>
+
+
+    <!-- javascript link -->
+   <script src="main.js"></script>
+
+</body>
+</html>
